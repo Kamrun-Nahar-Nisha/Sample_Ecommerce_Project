@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Sample E-Commerce</title>
+        <title>Sample E-Commerce Application</title>
 
         <!-- Favicon -->
         <link rel="icon" href="img/favicon.png" type="image/png" />
@@ -57,6 +57,7 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="img/logo.png" alt="">
                                 <img src="img/logo-2.png" alt="">
+                            
                             </a>
                         </div>
                     </div>
@@ -65,10 +66,10 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="col-md-9 p0">
                             <ul class="nav navbar-nav main_nav">
+                              <li><a href="#">Phone</a></li>
                               <li><a href="#">Laptops</a></li>
-                              <li><a href="#">Drones</a></li>
-                                <li><a href="#">Gadgets</a></li>
-                                <li><a href="#">Phones</a></li>
+                                <li><a href="#">Drones</a></li>
+                                <li><a href="#">Watches</a></li>
                                 <li><a href="#">VR</a></li>
                                 <li><a href="#">Contact us</a></li>
                             </ul>
@@ -89,8 +90,8 @@
         <section class="slider_area row m0">
             <div class="slider_inner">
                 <div class="camera_caption">
-                    <h2 class="wow fadeInUp animated">Make Your Shopping Easy</h2>
-                    <h5 class="wow fadeIn animated" data-wow-delay="0.3s">Find everything accordingly</h5>
+                    <h2 class="wow fadeInUp animated">Experience the lifestyle</h2>
+                    <h5 class="wow fadeIn animated" data-wow-delay="0.3s">Find it, love it, buy it</h5>
                     <a class="learn_mor wow fadeInU" data-wow-delay="0.6s" href="#product-list">Show Now!</a>
                 </div>
             </div>
@@ -104,7 +105,7 @@
             <div class="row it_works">
               <?php
 
-                        $link = mysqli_connect('mysqldb', 'ecomuser', 'ecompassword', 'ecomdb');
+                        $link = mysqli_connect('localhost', 'ecomuser', 'ecompassword', 'ecomdb');
 
                         if ($link) {
                         $res = mysqli_query($link, "select * from products;");
@@ -154,7 +155,7 @@
 
 
                 <div class="copy_right_area">
-                    <h4 class="copy_right">© Copyright 2021 Sample Ecommerce | All Rights Reserved</h4>
+                    <h4 class="copy_right">© Nisha-11411 2022 Sample Ecommerce Application</h4>
                 </div>
             </div>
         </footer>
